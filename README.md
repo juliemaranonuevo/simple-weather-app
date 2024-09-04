@@ -61,4 +61,4 @@ php artisan serve
 npm run dev
 ```
 
-4. Access the Application: Open your web browser and navigate to http://127.0.0.1:8000 or http://localhost:3000 (or the URL specified in your configuration) to view the application.
+4. Access the Application: Open your web browser and navigate to http://127.0.0.1:8000 (or the URL specified in your configuration) to view the application.
