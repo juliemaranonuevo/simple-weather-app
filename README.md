@@ -24,8 +24,6 @@ This project integrates the Geoapify Places API and OpenWeatherMap API to delive
 
 -   Error Handling: Robust error handling is implemented to manage potential issues like API failures or network disruptions. Users are presented with clear and friendly messages in case of any problems, maintaining a positive user experience.
 
--   Performance Optimization: The application is optimized for performance, with minimized API calls and efficient data handling. This ensures fast load times and a smooth user experience, even when dealing with extensive weather data.
-
 ## How to Use the Application
 
 1. Setup: Clone the repository and install the required dependencies.
