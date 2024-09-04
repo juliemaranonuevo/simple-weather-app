@@ -34,6 +34,7 @@
     import FiveDayForecast from './FiveDayForecast.vue';
     import PlaceToVisit from './PlaceToVisit.vue';
     import ExploreCity from './ExploreCity.vue';
+    import { inject } from 'vue';
 
     export default {
         components: {
@@ -53,6 +54,7 @@
             const currentWeather = ref({});
             const todayForecast = ref([]);
             const fiveDaysForecast = ref([]);
+            const swal = inject('$swal');
             
             onMounted(() => {
                 getPlaces();
@@ -67,12 +69,16 @@
                         currentWeather.value = response?.data.currentWeather;
                         todayForecast.value = response?.data.todayForecast;
                         fiveDaysForecast.value = response?.data.fiveDaysForecast;
-
                         loading.value = false;
                     });
                 } catch(error) {
-                    console.log(error);
                     loading.value = false;
+                    swal.fire({
+                        title: error.code,
+                        text: error.message,
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
                 }
             };
 

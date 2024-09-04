@@ -23,6 +23,7 @@
     import axios from 'axios';
     import {onMounted, ref} from "vue";
     import CityCard from './CityCard.vue';
+    import { inject } from 'vue';
 
     export default {
         components: {
@@ -35,6 +36,7 @@
             const date = props.date;
             const cities = ref([]);
             const loading = ref(false);
+            const swal = inject('$swal');
 
             onMounted(() => {
                 getCities();
@@ -54,6 +56,12 @@
                     });
                 } catch(error) {
                     loading.value = false;
+                    swal.fire({
+                        title: error.code,
+                        text: error.message,
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
                 }
             };
 

@@ -8,9 +8,9 @@ This project integrates the Geoapify Places API and OpenWeatherMap API to delive
 
 1. Simplified UI/UX Design
 
--   User-Centric Approach: The interface is designed with simplicity and clarity in mind. By prioritizing ease of use and minimizing complexity, the application ensures a smooth and intuitive user experience.
+-   User Approach: The interface is designed with simplicity and clarity in mind. By prioritizing ease of use and minimizing complexity, the application ensures a smooth and intuitive user experience.
 
--   Visual Hierarchy: The sky blue color theme enhances readability and visually cues users to weather-related content. This design choice not only makes the application aesthetically pleasing but also helps users quickly grasp the information.
+-   Visual: The sky blue color theme enhances readability and visually cues users to weather-related content. This design choice not only makes the application aesthetically pleasing but also helps users quickly grasp the information.
 
 -   City Display: The main page prominently lists the six cities in Japan. Each city is displayed in a straightforward layout, with clickable links leading to dedicated pages for detailed weather forecasts. This clear navigation path improves the overall user experience.
 
@@ -26,10 +26,6 @@ This project integrates the Geoapify Places API and OpenWeatherMap API to delive
 
 -   Performance Optimization: The application is optimized for performance, with minimized API calls and efficient data handling. This ensures fast load times and a smooth user experience, even when dealing with extensive weather data.
 
-3. Scalability and Maintainability
-
--   Scalable Design: The application is designed to be easily scalable. Adding more cities or integrating additional features, such as air quality data, can be accomplished with minimal adjustments to the existing codebase.
-
 ## How to Use the Application
 
 1. Setup: Clone the repository and install the required dependencies.
@@ -37,7 +33,7 @@ This project integrates the Geoapify Places API and OpenWeatherMap API to delive
 ```bash
 git clone <repository-url>
 cd <project-directory>
-npm run dev
+npm install
 composer update
 ```
 
@@ -67,4 +63,4 @@ php artisan serve
 npm run dev
 ```
 
-Access the Application: Open your web browser and navigate to http://127.0.0.1:8000 or http://localhost:3000 (or the URL specified in your configuration) to view the application.
+4. Access the Application: Open your web browser and navigate to http://127.0.0.1:8000 or http://localhost:3000 (or the URL specified in your configuration) to view the application.
